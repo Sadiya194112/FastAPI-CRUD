@@ -1,6 +1,6 @@
 📝 FastAPI Task Manager
 
-A simple and secure Task Management API built using FastAPI, JWT Authentication, and MySQL.
+A simple and secure Task Management API built using FastAPI, JWT Authentication, and MySQL. <br>
 🚀 Features
 
     User Registration & Login

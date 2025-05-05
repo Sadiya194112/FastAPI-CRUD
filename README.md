@@ -1,16 +1,16 @@
 📝 **FastAPI Task Manager**
 
 A simple and secure Task Management API built using FastAPI, JWT Authentication, and MySQL. <br>
-🚀 **Features**    
-User Registration & Login   
+🚀 **Features**
+    User Registration & Login
 
-JWT-based Authentication    
+    JWT-based Authentication
 
-CRUD operations for tasks    
+    CRUD operations for tasks
 
-MySQL Database Integration    
+    MySQL Database Integration
 
-SQLAlchemy ORM
+    SQLAlchemy ORM
 
 
 ⚙️ **Prerequisites**

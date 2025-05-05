@@ -1,7 +1,7 @@
 📝 **FastAPI Task Manager**
 
 A simple and secure Task Management API built using FastAPI, JWT Authentication, and MySQL. <br>
-🚀 Features
+🚀 **Features**
 
     User Registration & Login
 
@@ -22,23 +22,23 @@ A simple and secure Task Management API built using FastAPI, JWT Authentication,
 
     virtualenv (recommended)
 
-🛠️ Setup Instructions
-1. Clone the Repository <br>
+🛠️ **Setup Instructions**
+1. **Clone the Repository** <br>
 
-    git clone https://github.com/Sadiya194112/FastAPI-CRUD.git
+    git clone https://github.com/Sadiya194112/FastAPI-CRUD.git    <br>
     cd FastAPI CRUD
 
-2. Create and Activate Virtual Environment <br>
+2. **Create and Activate Virtual Environment** <br>
 
     python -m venv venv <br>
     source venv/bin/activate      # On Unix/MacOS <br>
     venv\Scripts\activate         # On Windows <br>
 
-3. Install Dependencies <br>
+3. **Install Dependencies** <br>
 
     pip install -r requirements.txt <br>
 
-4. Set Up Environment Variables <br>
+4. **Set Up Environment Variables** <br>
     
     Create a .env file in the root directory and add: <br>
     
@@ -47,7 +47,7 @@ A simple and secure Task Management API built using FastAPI, JWT Authentication,
 
     🔐 Keep your secret key secure in a production environment.
 
-5. Configure MySQL <br>
+5. **Configure MySQL** <br>
 
     Ensure you have a MySQL server running locally and a database named first_db: <br>
     
@@ -57,12 +57,12 @@ A simple and secure Task Management API built using FastAPI, JWT Authentication,
     
     SQLALCHEMY_DB_URL = "mysql+pymysql://<user>:<password>@localhost/first_db" <br>
 
-6. Run the Application
+6. **Run the Application**
 
     uvicorn main:app --reload <br>
     
     Server will run at: http://127.0.0.1:8001 <br>
-🔐 Authentication Flow    <br>
+🔐 Authentication Flow  <br>
 
     Register a user via POST /users/ <br>
 

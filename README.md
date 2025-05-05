@@ -23,75 +23,75 @@ A simple and secure Task Management API built using FastAPI, JWT Authentication,
     virtualenv (recommended)
 
 🛠️ Setup Instructions
-1. Clone the Repository
+1. Clone the Repository <br>
 
-git clone https://github.com/Sadiya194112/FastAPI-CRUD.git
-cd FastAPI CRUD
+    git clone https://github.com/Sadiya194112/FastAPI-CRUD.git
+    cd FastAPI CRUD
 
-2. Create and Activate Virtual Environment
+2. Create and Activate Virtual Environment <br>
 
-python -m venv venv
-source venv/bin/activate      # On Unix/MacOS
-venv\Scripts\activate         # On Windows
+    python -m venv venv <br>
+    source venv/bin/activate      # On Unix/MacOS <br>
+    venv\Scripts\activate         # On Windows <br>
 
-3. Install Dependencies
+3. Install Dependencies <br>
 
-pip install -r requirements.txt
+    pip install -r requirements.txt <br>
 
-4. Set Up Environment Variables
-
-Create a .env file in the root directory and add:
-
-secret = 8b68a6c218b450eca9621f7d96d82550
-algorithm = HS256
+4. Set Up Environment Variables <br>
+    
+    Create a .env file in the root directory and add: <br>
+    
+    secret = 8b68a6c218b450eca9621f7d96d82550 <br>
+    algorithm = HS256    <br>
 
     🔐 Keep your secret key secure in a production environment.
 
-5. Configure MySQL
+5. Configure MySQL <br>
 
-Ensure you have a MySQL server running locally and a database named first_db:
-
-CREATE DATABASE first_db;
-
-Update the connection string in database.py if your username or password differs:
-
-SQLALCHEMY_DB_URL = "mysql+pymysql://<user>:<password>@localhost/first_db"
+    Ensure you have a MySQL server running locally and a database named first_db: <br>
+    
+    CREATE DATABASE first_db;    <br>
+    
+    Update the connection string in database.py if your username or password differs: <br>
+    
+    SQLALCHEMY_DB_URL = "mysql+pymysql://<user>:<password>@localhost/first_db" <br>
 
 6. Run the Application
 
-uvicorn main:app --reload
+    uvicorn main:app --reload <br>
+    
+    Server will run at: http://127.0.0.1:8001 <br>
+🔐 Authentication Flow    <br>
 
-Server will run at: http://127.0.0.1:8000
-🔐 Authentication Flow
+    Register a user via POST /users/ <br>
 
-    Register a user via POST /users/
+    Login to get a JWT token via POST /login/    <br>
 
-    Login to get a JWT token via POST /login/
+    Use the token in the Authorization header:    <br>
+    Bearer <your-token> to access protected routes like:    <br>
 
-    Use the token in the Authorization header:
-    Bearer <your-token> to access protected routes like:
+        POST /tasks/    <br>
 
-        POST /tasks/
+        PUT /tasks/{task_id}     <br>
 
-        PUT /tasks/{task_id}
-
-        DELETE /tasks/{task_id}
+        DELETE /tasks/{task_id}    <br>
 
 📬 API Endpoints
-Method	Endpoint	Description	Auth Required
-POST	/users/	Register new user	❌
-POST	/login/	Login and get token	❌
-GET	/tasks/	Get all tasks	❌
-POST	/tasks/	Create new task	✅
-PUT	/tasks/{task_id}	Update existing task	✅
-DELETE	/tasks/{task_id}	Delete a task	✅
-🧪 Testing the API
+    Method	    Endpoint	        Description	        Auth Required <br>
+    POST	    /users/	            Register new user	    ❌    <br>
+    POST	    /login/	            Login and get token	    ❌    <br>
+    GET	        /tasks/	            Get all tasks	        ❌    <br>
+    POST	    /tasks/	            Create new task	        ✅    <br>
+    PUT	        /tasks/{task_id}	Update existing task	✅    <br>
+    DELETE	    /tasks/{task_id}    Delete a task	        ✅    <br>
+🧪 Testing the API    <br>
 
-You can test your API using tools like:
+You can test your API using tools like:    <br>
 
-    Postman
+    Postman    <br>
 
-    cURL
+    cURL    <br>
 
     FastAPI Docs
 

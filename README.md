@@ -77,7 +77,7 @@ A simple and secure Task Management API built using FastAPI, JWT Authentication,
 
         DELETE /tasks/{task_id}    
 
-📬 API Endpoints
+📬 API Endpoints    <br>
     Method	    Endpoint	        Description	        Auth Required <br>
     POST	    /users/	            Register new user	    ❌    <br>
     POST	    /login/	            Login and get token	    ❌    <br>
@@ -89,9 +89,9 @@ A simple and secure Task Management API built using FastAPI, JWT Authentication,
 
 You can test your API using tools like:    <br>
 
-    Postman    <br>
-
-    cURL    <br>
+    Postman    
+    
+    cURL    
 
     FastAPI Docs
 

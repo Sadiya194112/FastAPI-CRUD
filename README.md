@@ -2,7 +2,6 @@
 
 A simple and secure Task Management API built using FastAPI, JWT Authentication, and MySQL. <br>
 🚀 **Features**
-
     User Registration & Login
 
     JWT-based Authentication

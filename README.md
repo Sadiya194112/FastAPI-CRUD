@@ -55,7 +55,7 @@ A simple and secure Task Management API built using FastAPI, JWT Authentication,
     
     Update the connection string in database.py if your username or password differs: <br>
     
-    SQLALCHEMY_DB_URL = "mysql+pymysql://<user>:<password>@localhost/first_db" <br>
+    SQLALCHEMY_DB_URL = "mysql+pymysql://username:password@localhost/first_db" <br>
 
 6. **Run the Application**
 

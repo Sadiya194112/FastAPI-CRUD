@@ -1,4 +1,4 @@
-📝 FastAPI Task Manager
+📝 **FastAPI Task Manager**
 
 A simple and secure Task Management API built using FastAPI, JWT Authentication, and MySQL. <br>
 🚀 Features
@@ -14,7 +14,7 @@ A simple and secure Task Management API built using FastAPI, JWT Authentication,
     SQLAlchemy ORM
 
 
-⚙️ Prerequisites
+⚙️ **Prerequisites**
 
     Python 3.10+
 
@@ -71,11 +71,11 @@ A simple and secure Task Management API built using FastAPI, JWT Authentication,
     Use the token in the Authorization header:    <br>
     Bearer <your-token> to access protected routes like:    <br>
 
-        POST /tasks/    <br>
+        POST /tasks/   
 
-        PUT /tasks/{task_id}     <br>
+        PUT /tasks/{task_id}     
 
-        DELETE /tasks/{task_id}    <br>
+        DELETE /tasks/{task_id}    
 
 📬 API Endpoints
     Method	    Endpoint	        Description	        Auth Required <br>
